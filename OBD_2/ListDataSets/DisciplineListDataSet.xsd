@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DisciplineListDataSet" targetNamespace="http://tempuri.org/DisciplineListDataSet.xsd" xmlns:mstns="http://tempuri.org/DisciplineListDataSet.xsd" xmlns="http://tempuri.org/DisciplineListDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SchoolRegisterConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SchoolRegisterConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.OBD_2.Properties.Settings.GlobalReference.Default.SchoolRegisterConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Discipline_InfoTableAdapter" GeneratorDataComponentClassName="Discipline_InfoTableAdapter" Name="Discipline_Info" UserDataComponentName="Discipline_InfoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SchoolRegisterConnectionString1 (Settings)" DbObjectName="SchoolRegister.dbo.Discipline_Info" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Прізвище, [Ім'я], [По батькові], [Назва дисципліни], [Кількість годин] FROM dbo.Discipline_Info</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Прізвище" DataSetColumn="Прізвище" />
+              <Mapping SourceColumn="Ім'я" DataSetColumn="Ім'я" />
+              <Mapping SourceColumn="По батькові" DataSetColumn="По батькові" />
+              <Mapping SourceColumn="Назва дисципліни" DataSetColumn="Назва дисципліни" />
+              <Mapping SourceColumn="Кількість годин" DataSetColumn="Кількість годин" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DisciplineListDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DisciplineListDataSet" msprop:Generator_UserDSName="DisciplineListDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Discipline_Info" msprop:Generator_TableClassName="Discipline_InfoDataTable" msprop:Generator_TableVarName="tableDiscipline_Info" msprop:Generator_TablePropName="Discipline_Info" msprop:Generator_RowDeletingName="Discipline_InfoRowDeleting" msprop:Generator_RowChangingName="Discipline_InfoRowChanging" msprop:Generator_RowEvHandlerName="Discipline_InfoRowChangeEventHandler" msprop:Generator_RowDeletedName="Discipline_InfoRowDeleted" msprop:Generator_UserTableName="Discipline_Info" msprop:Generator_RowChangedName="Discipline_InfoRowChanged" msprop:Generator_RowEvArgName="Discipline_InfoRowChangeEvent" msprop:Generator_RowClassName="Discipline_InfoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Прізвище" msprop:Generator_ColumnVarNameInTable="columnПрізвище" msprop:Generator_ColumnPropNameInRow="Прізвище" msprop:Generator_ColumnPropNameInTable="ПрізвищеColumn" msprop:Generator_UserColumnName="Прізвище">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Ім_x0027_я" msprop:Generator_ColumnVarNameInTable="_columnІм_я" msprop:Generator_ColumnPropNameInRow="_Ім_я" msprop:Generator_ColumnPropNameInTable="_Ім_яColumn" msprop:Generator_UserColumnName="Ім'я">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="По_x0020_батькові" msprop:Generator_ColumnVarNameInTable="columnПо_батькові" msprop:Generator_ColumnPropNameInRow="По_батькові" msprop:Generator_ColumnPropNameInTable="По_батьковіColumn" msprop:Generator_UserColumnName="По батькові">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Назва_x0020_дисципліни" msprop:Generator_ColumnVarNameInTable="columnНазва_дисципліни" msprop:Generator_ColumnPropNameInRow="Назва_дисципліни" msprop:Generator_ColumnPropNameInTable="Назва_дисципліниColumn" msprop:Generator_UserColumnName="Назва дисципліни">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Кількість_x0020_годин" msprop:Generator_ColumnVarNameInTable="columnКількість_годин" msprop:Generator_ColumnPropNameInRow="Кількість_годин" msprop:Generator_ColumnPropNameInTable="Кількість_годинColumn" msprop:Generator_UserColumnName="Кількість годин" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

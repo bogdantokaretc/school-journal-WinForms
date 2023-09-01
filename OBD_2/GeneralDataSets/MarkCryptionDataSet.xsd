@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MarkCryptionDataSet" targetNamespace="http://tempuri.org/MarkCryptionDataSet.xsd" xmlns:mstns="http://tempuri.org/MarkCryptionDataSet.xsd" xmlns="http://tempuri.org/MarkCryptionDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SchoolRegisterConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SchoolRegisterConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.OBD_2.Properties.Settings.GlobalReference.Default.SchoolRegisterConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Mark_EncryptionTableAdapter" GeneratorDataComponentClassName="Mark_EncryptionTableAdapter" Name="Mark_Encryption" UserDataComponentName="Mark_EncryptionTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SchoolRegisterConnectionString1 (Settings)" DbObjectName="SchoolRegister.dbo.Mark_Encryption" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Mark_Cryption FROM dbo.Mark_Encryption</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Mark_Cryption" DataSetColumn="Mark_Cryption" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MarkCryptionDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="MarkCryptionDataSet" msprop:Generator_UserDSName="MarkCryptionDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Mark_Encryption" msprop:Generator_TableClassName="Mark_EncryptionDataTable" msprop:Generator_TableVarName="tableMark_Encryption" msprop:Generator_TablePropName="Mark_Encryption" msprop:Generator_RowDeletingName="Mark_EncryptionRowDeleting" msprop:Generator_RowChangingName="Mark_EncryptionRowChanging" msprop:Generator_RowEvHandlerName="Mark_EncryptionRowChangeEventHandler" msprop:Generator_RowDeletedName="Mark_EncryptionRowDeleted" msprop:Generator_UserTableName="Mark_Encryption" msprop:Generator_RowChangedName="Mark_EncryptionRowChanged" msprop:Generator_RowEvArgName="Mark_EncryptionRowChangeEvent" msprop:Generator_RowClassName="Mark_EncryptionRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Mark_Cryption" msprop:Generator_ColumnVarNameInTable="columnMark_Cryption" msprop:Generator_ColumnPropNameInRow="Mark_Cryption" msprop:Generator_ColumnPropNameInTable="Mark_CryptionColumn" msprop:Generator_UserColumnName="Mark_Cryption">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

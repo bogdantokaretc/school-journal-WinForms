@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="reportOneDataSet" targetNamespace="http://tempuri.org/reportOneDataSet.xsd" xmlns:mstns="http://tempuri.org/reportOneDataSet.xsd" xmlns="http://tempuri.org/reportOneDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SchoolRegisterConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SchoolRegisterConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.OBD_2.Properties.Settings.GlobalReference.Default.SchoolRegisterConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="StudentTableAdapter" GeneratorDataComponentClassName="StudentTableAdapter" Name="Student" UserDataComponentName="StudentTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SchoolRegisterConnectionString1 (Settings)" DbObjectName="SchoolRegister.dbo.Student" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Student_Surname, Student_Name, Student_Patronymic, Education_Form FROM dbo.Student</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Student_Surname" DataSetColumn="Student_Surname" />
+              <Mapping SourceColumn="Student_Name" DataSetColumn="Student_Name" />
+              <Mapping SourceColumn="Student_Patronymic" DataSetColumn="Student_Patronymic" />
+              <Mapping SourceColumn="Education_Form" DataSetColumn="Education_Form" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="reportOneDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="reportOneDataSet" msprop:Generator_UserDSName="reportOneDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Student" msprop:Generator_TableClassName="StudentDataTable" msprop:Generator_TableVarName="tableStudent" msprop:Generator_TablePropName="Student" msprop:Generator_RowDeletingName="StudentRowDeleting" msprop:Generator_RowChangingName="StudentRowChanging" msprop:Generator_RowEvHandlerName="StudentRowChangeEventHandler" msprop:Generator_RowDeletedName="StudentRowDeleted" msprop:Generator_UserTableName="Student" msprop:Generator_RowChangedName="StudentRowChanged" msprop:Generator_RowEvArgName="StudentRowChangeEvent" msprop:Generator_RowClassName="StudentRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Student_Surname" msprop:Generator_ColumnVarNameInTable="columnStudent_Surname" msprop:Generator_ColumnPropNameInRow="Student_Surname" msprop:Generator_ColumnPropNameInTable="Student_SurnameColumn" msprop:Generator_UserColumnName="Student_Surname">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Student_Name" msprop:Generator_ColumnVarNameInTable="columnStudent_Name" msprop:Generator_ColumnPropNameInRow="Student_Name" msprop:Generator_ColumnPropNameInTable="Student_NameColumn" msprop:Generator_UserColumnName="Student_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Student_Patronymic" msprop:Generator_ColumnVarNameInTable="columnStudent_Patronymic" msprop:Generator_ColumnPropNameInRow="Student_Patronymic" msprop:Generator_ColumnPropNameInTable="Student_PatronymicColumn" msprop:Generator_UserColumnName="Student_Patronymic">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Education_Form" msprop:Generator_ColumnVarNameInTable="columnEducation_Form" msprop:Generator_ColumnPropNameInRow="Education_Form" msprop:Generator_ColumnPropNameInTable="Education_FormColumn" msprop:Generator_UserColumnName="Education_Form">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

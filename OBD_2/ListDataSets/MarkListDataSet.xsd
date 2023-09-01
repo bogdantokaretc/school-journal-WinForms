@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MarkListDataSet" targetNamespace="http://tempuri.org/MarkListDataSet.xsd" xmlns:mstns="http://tempuri.org/MarkListDataSet.xsd" xmlns="http://tempuri.org/MarkListDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SchoolRegisterConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SchoolRegisterConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.OBD_2.Properties.Settings.GlobalReference.Default.SchoolRegisterConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Mark_InfoTableAdapter" GeneratorDataComponentClassName="Mark_InfoTableAdapter" Name="Mark_Info" UserDataComponentName="Mark_InfoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SchoolRegisterConnectionString1 (Settings)" DbObjectName="SchoolRegister.dbo.Mark_Info" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Прізвище, [Ім'я], [По батькові], Дисципліна, Оцінка, [Дата отримання] FROM dbo.Mark_Info</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Прізвище" DataSetColumn="Прізвище" />
+              <Mapping SourceColumn="Ім'я" DataSetColumn="Ім'я" />
+              <Mapping SourceColumn="По батькові" DataSetColumn="По батькові" />
+              <Mapping SourceColumn="Дисципліна" DataSetColumn="Дисципліна" />
+              <Mapping SourceColumn="Оцінка" DataSetColumn="Оцінка" />
+              <Mapping SourceColumn="Дата отримання" DataSetColumn="Дата отримання" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MarkListDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="MarkListDataSet" msprop:Generator_UserDSName="MarkListDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Mark_Info" msprop:Generator_TableClassName="Mark_InfoDataTable" msprop:Generator_TableVarName="tableMark_Info" msprop:Generator_TablePropName="Mark_Info" msprop:Generator_RowDeletingName="Mark_InfoRowDeleting" msprop:Generator_RowChangingName="Mark_InfoRowChanging" msprop:Generator_RowEvHandlerName="Mark_InfoRowChangeEventHandler" msprop:Generator_RowDeletedName="Mark_InfoRowDeleted" msprop:Generator_UserTableName="Mark_Info" msprop:Generator_RowChangedName="Mark_InfoRowChanged" msprop:Generator_RowEvArgName="Mark_InfoRowChangeEvent" msprop:Generator_RowClassName="Mark_InfoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Прізвище" msprop:Generator_ColumnVarNameInTable="columnПрізвище" msprop:Generator_ColumnPropNameInRow="Прізвище" msprop:Generator_ColumnPropNameInTable="ПрізвищеColumn" msprop:Generator_UserColumnName="Прізвище">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Ім_x0027_я" msprop:Generator_ColumnVarNameInTable="_columnІм_я" msprop:Generator_ColumnPropNameInRow="_Ім_я" msprop:Generator_ColumnPropNameInTable="_Ім_яColumn" msprop:Generator_UserColumnName="Ім'я">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="По_x0020_батькові" msprop:Generator_ColumnVarNameInTable="columnПо_батькові" msprop:Generator_ColumnPropNameInRow="По_батькові" msprop:Generator_ColumnPropNameInTable="По_батьковіColumn" msprop:Generator_UserColumnName="По батькові">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Дисципліна" msprop:Generator_ColumnVarNameInTable="columnДисципліна" msprop:Generator_ColumnPropNameInRow="Дисципліна" msprop:Generator_ColumnPropNameInTable="ДисциплінаColumn" msprop:Generator_UserColumnName="Дисципліна">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Оцінка" msprop:Generator_ColumnVarNameInTable="columnОцінка" msprop:Generator_ColumnPropNameInRow="Оцінка" msprop:Generator_ColumnPropNameInTable="ОцінкаColumn" msprop:Generator_UserColumnName="Оцінка" type="xs:int" />
+              <xs:element name="Дата_x0020_отримання" msprop:Generator_ColumnVarNameInTable="columnДата_отримання" msprop:Generator_ColumnPropNameInRow="Дата_отримання" msprop:Generator_ColumnPropNameInTable="Дата_отриманняColumn" msprop:Generator_UserColumnName="Дата отримання" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Mark_Info" />
+      <xs:field xpath="mstns:Дата_x0020_отримання" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
