@@ -4,7 +4,7 @@
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SchoolRegisterConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SchoolRegisterConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.OBD_2.Properties.Settings.GlobalReference.Default.SchoolRegisterConnectionString1" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SchoolRegisterConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SchoolRegisterConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SchoolJornal.Properties.Settings.GlobalReference.Default.SchoolRegisterConnectionString1" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="EducationFormProcedureTableAdapter" GeneratorDataComponentClassName="EducationFormProcedureTableAdapter" Name="EducationFormProcedure" UserDataComponentName="EducationFormProcedureTableAdapter">
@@ -30,13 +30,13 @@
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="EducationFormDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="EducationFormDataSet" msprop:Generator_UserDSName="EducationFormDataSet">
+  <xs:element name="EducationFormDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="EducationFormDataSet" msprop:Generator_DataSetName="EducationFormDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="EducationFormProcedure" msprop:Generator_TableClassName="EducationFormProcedureDataTable" msprop:Generator_TableVarName="tableEducationFormProcedure" msprop:Generator_TablePropName="EducationFormProcedure" msprop:Generator_RowDeletingName="EducationFormProcedureRowDeleting" msprop:Generator_RowChangingName="EducationFormProcedureRowChanging" msprop:Generator_RowEvHandlerName="EducationFormProcedureRowChangeEventHandler" msprop:Generator_RowDeletedName="EducationFormProcedureRowDeleted" msprop:Generator_UserTableName="EducationFormProcedure" msprop:Generator_RowChangedName="EducationFormProcedureRowChanged" msprop:Generator_RowEvArgName="EducationFormProcedureRowChangeEvent" msprop:Generator_RowClassName="EducationFormProcedureRow">
+        <xs:element name="EducationFormProcedure" msprop:Generator_RowClassName="EducationFormProcedureRow" msprop:Generator_RowEvHandlerName="EducationFormProcedureRowChangeEventHandler" msprop:Generator_RowDeletedName="EducationFormProcedureRowDeleted" msprop:Generator_RowDeletingName="EducationFormProcedureRowDeleting" msprop:Generator_RowEvArgName="EducationFormProcedureRowChangeEvent" msprop:Generator_TablePropName="EducationFormProcedure" msprop:Generator_RowChangedName="EducationFormProcedureRowChanged" msprop:Generator_RowChangingName="EducationFormProcedureRowChanging" msprop:Generator_TableClassName="EducationFormProcedureDataTable" msprop:Generator_UserTableName="EducationFormProcedure" msprop:Generator_TableVarName="tableEducationFormProcedure">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Форма_x0020_навчання" msprop:Generator_ColumnVarNameInTable="columnФорма_навчання" msprop:Generator_ColumnPropNameInRow="Форма_навчання" msprop:Generator_ColumnPropNameInTable="Форма_навчанняColumn" msprop:Generator_UserColumnName="Форма навчання">
+              <xs:element name="Форма_x0020_навчання" msprop:Generator_ColumnPropNameInRow="Форма_навчання" msprop:Generator_ColumnPropNameInTable="Форма_навчанняColumn" msprop:Generator_ColumnVarNameInTable="columnФорма_навчання" msprop:Generator_UserColumnName="Форма навчання">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="20" />

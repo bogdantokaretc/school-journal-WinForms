@@ -4,7 +4,7 @@
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SchoolRegisterConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SchoolRegisterConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.OBD_2.Properties.Settings.GlobalReference.Default.SchoolRegisterConnectionString1" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SchoolRegisterConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SchoolRegisterConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SchoolJornal.Properties.Settings.GlobalReference.Default.SchoolRegisterConnectionString1" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Mark_EncryptionTableAdapter" GeneratorDataComponentClassName="Mark_EncryptionTableAdapter" Name="Mark_Encryption" UserDataComponentName="Mark_EncryptionTableAdapter">
@@ -60,20 +60,20 @@ SELECT ID_Mark, Mark_Cryption FROM Mark_Encryption WHERE (ID_Mark = @ID_Mark)</C
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="MarkEncryptionDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="MarkEncryptionDataSet" msprop:Generator_UserDSName="MarkEncryptionDataSet">
+  <xs:element name="MarkEncryptionDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="MarkEncryptionDataSet" msprop:Generator_DataSetName="MarkEncryptionDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Mark_Encryption" msprop:Generator_TableClassName="Mark_EncryptionDataTable" msprop:Generator_TableVarName="tableMark_Encryption" msprop:Generator_TablePropName="Mark_Encryption" msprop:Generator_RowDeletingName="Mark_EncryptionRowDeleting" msprop:Generator_RowChangingName="Mark_EncryptionRowChanging" msprop:Generator_RowEvHandlerName="Mark_EncryptionRowChangeEventHandler" msprop:Generator_RowDeletedName="Mark_EncryptionRowDeleted" msprop:Generator_UserTableName="Mark_Encryption" msprop:Generator_RowChangedName="Mark_EncryptionRowChanged" msprop:Generator_RowEvArgName="Mark_EncryptionRowChangeEvent" msprop:Generator_RowClassName="Mark_EncryptionRow">
+        <xs:element name="Mark_Encryption" msprop:Generator_RowClassName="Mark_EncryptionRow" msprop:Generator_RowEvHandlerName="Mark_EncryptionRowChangeEventHandler" msprop:Generator_RowDeletedName="Mark_EncryptionRowDeleted" msprop:Generator_RowDeletingName="Mark_EncryptionRowDeleting" msprop:Generator_RowEvArgName="Mark_EncryptionRowChangeEvent" msprop:Generator_TablePropName="Mark_Encryption" msprop:Generator_RowChangedName="Mark_EncryptionRowChanged" msprop:Generator_RowChangingName="Mark_EncryptionRowChanging" msprop:Generator_TableClassName="Mark_EncryptionDataTable" msprop:Generator_UserTableName="Mark_Encryption" msprop:Generator_TableVarName="tableMark_Encryption">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="ID_Mark" msprop:Generator_ColumnVarNameInTable="columnID_Mark" msprop:Generator_ColumnPropNameInRow="ID_Mark" msprop:Generator_ColumnPropNameInTable="ID_MarkColumn" msprop:Generator_UserColumnName="ID_Mark">
+              <xs:element name="ID_Mark" msprop:Generator_ColumnPropNameInRow="ID_Mark" msprop:Generator_ColumnPropNameInTable="ID_MarkColumn" msprop:Generator_ColumnVarNameInTable="columnID_Mark" msprop:Generator_UserColumnName="ID_Mark">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="5" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Mark_Cryption" msprop:Generator_ColumnVarNameInTable="columnMark_Cryption" msprop:Generator_ColumnPropNameInRow="Mark_Cryption" msprop:Generator_ColumnPropNameInTable="Mark_CryptionColumn" msprop:Generator_UserColumnName="Mark_Cryption">
+              <xs:element name="Mark_Cryption" msprop:Generator_ColumnPropNameInRow="Mark_Cryption" msprop:Generator_ColumnPropNameInTable="Mark_CryptionColumn" msprop:Generator_ColumnVarNameInTable="columnMark_Cryption" msprop:Generator_UserColumnName="Mark_Cryption">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="20" />

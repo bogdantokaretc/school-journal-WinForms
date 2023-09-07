@@ -1,5 +1,5 @@
 ﻿
-namespace OBD_2
+namespace SchoolJornal
 {
     partial class AddEditTeacher
     {
@@ -47,7 +47,7 @@ namespace OBD_2
             this.addEditButton = new System.Windows.Forms.Button();
             this.PersonalInfo = new System.Windows.Forms.ToolTip(this.components);
             this.Contacts = new System.Windows.Forms.ToolTip(this.components);
-            this.teacher_InfoTableAdapter = new OBD_2.ListDataSets.TeacherListDataSetTableAdapters.Teacher_InfoTableAdapter();
+            this.teacher_InfoTableAdapter = new SchoolJornal.ListDataSets.TeacherListDataSetTableAdapters.Teacher_InfoTableAdapter();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();

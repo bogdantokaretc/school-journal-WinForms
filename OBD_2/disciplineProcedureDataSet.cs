@@ -1,4 +1,4 @@
-﻿namespace OBD_2
+﻿namespace SchoolJornal
 {
 
 

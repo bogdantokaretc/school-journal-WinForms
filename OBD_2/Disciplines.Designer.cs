@@ -1,6 +1,6 @@
 ﻿
 
-namespace OBD_2
+namespace SchoolJornal
 {
     partial class Disciplines
     {
@@ -37,10 +37,10 @@ namespace OBD_2
             this.disciplineCheck = new System.Windows.Forms.CheckBox();
             this.teacherBox = new System.Windows.Forms.ComboBox();
             this.teacherProcedureBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.teacherDataSet = new OBD_2.GeneralDataSets.teacherDataSet();
+            this.teacherDataSet = new SchoolJornal.GeneralDataSets.teacherDataSet();
             this.disciplineBox = new System.Windows.Forms.ComboBox();
             this.disciplineProcedureBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.disciplineProcedureDataSet = new OBD_2.disciplineProcedureDataSet();
+            this.disciplineProcedureDataSet = new SchoolJornal.disciplineProcedureDataSet();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -52,15 +52,15 @@ namespace OBD_2
             this.назваДисципліниDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.кількістьГодинDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.disciplineInfoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.disciplineListDataSet = new OBD_2.ListDataSets.DisciplineListDataSet();
+            this.disciplineListDataSet = new SchoolJornal.ListDataSets.DisciplineListDataSet();
             this.disciplineFindBox = new System.Windows.Forms.Button();
             this.homeButton = new System.Windows.Forms.Button();
             this.deleteDisciplineButton = new System.Windows.Forms.Button();
             this.editDisciplineButton = new System.Windows.Forms.Button();
             this.addDisciplineButton = new System.Windows.Forms.Button();
-            this.discipline_InfoTableAdapter = new OBD_2.ListDataSets.DisciplineListDataSetTableAdapters.Discipline_InfoTableAdapter();
-            this.teacherProcedureTableAdapter = new OBD_2.GeneralDataSets.teacherDataSetTableAdapters.TeacherProcedureTableAdapter();
-            this.disciplineProcedureTableAdapter = new OBD_2.disciplineProcedureDataSetTableAdapters.DisciplineProcedureTableAdapter();
+            this.discipline_InfoTableAdapter = new SchoolJornal.ListDataSets.DisciplineListDataSetTableAdapters.Discipline_InfoTableAdapter();
+            this.teacherProcedureTableAdapter = new SchoolJornal.GeneralDataSets.teacherDataSetTableAdapters.TeacherProcedureTableAdapter();
+            this.disciplineProcedureTableAdapter = new SchoolJornal.disciplineProcedureDataSetTableAdapters.DisciplineProcedureTableAdapter();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.teacherProcedureBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.teacherDataSet)).BeginInit();

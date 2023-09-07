@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace OBD_2.GeneralDataSets {
+namespace SchoolJornal.GeneralDataSets {
     
     
     /// <summary>
@@ -619,7 +619,7 @@ namespace OBD_2.GeneralDataSets {
         }
     }
 }
-namespace OBD_2.GeneralDataSets.MarkEncryptionDataSetTableAdapters {
+namespace SchoolJornal.GeneralDataSets.MarkEncryptionDataSetTableAdapters {
     
     
     /// <summary>
@@ -776,7 +776,7 @@ SELECT ID_Mark, Mark_Cryption FROM Mark_Encryption WHERE (ID_Mark = @ID_Mark)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::OBD_2.Properties.Settings.Default.SchoolRegisterConnectionString1;
+            this._connection.ConnectionString = global::SchoolJornal.Properties.Settings.Default.SchoolRegisterConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

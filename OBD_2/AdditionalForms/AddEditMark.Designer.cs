@@ -1,5 +1,5 @@
 ﻿
-namespace OBD_2
+namespace SchoolJornal
 {
     partial class AddEditMark
     {
@@ -34,12 +34,12 @@ namespace OBD_2
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.disciplineBox = new System.Windows.Forms.ComboBox();
             this.disciplineBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.disciplineDataSet = new OBD_2.GeneralDataSets.DisciplineDataSet();
+            this.disciplineDataSet = new SchoolJornal.GeneralDataSets.DisciplineDataSet();
             this.label3 = new System.Windows.Forms.Label();
             this.markBox = new System.Windows.Forms.ComboBox();
             this.markTypeBox = new System.Windows.Forms.ComboBox();
             this.markEncryptionBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.markEncryptionDataSet = new OBD_2.GeneralDataSets.MarkEncryptionDataSet();
+            this.markEncryptionDataSet = new SchoolJornal.GeneralDataSets.MarkEncryptionDataSet();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -48,16 +48,16 @@ namespace OBD_2
             this.label1 = new System.Windows.Forms.Label();
             this.educationClassBox = new System.Windows.Forms.ComboBox();
             this.classProcedureBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.classDataSet = new OBD_2.GeneralDataSets.ClassDataSet();
+            this.classDataSet = new SchoolJornal.GeneralDataSets.ClassDataSet();
             this.addEditButton = new System.Windows.Forms.Button();
             this.PersonalInfo = new System.Windows.Forms.ToolTip(this.components);
             this.MarkInfo = new System.Windows.Forms.ToolTip(this.components);
-            this.classProcedureTableAdapter = new OBD_2.GeneralDataSets.ClassDataSetTableAdapters.ClassProcedureTableAdapter();
-            this.mark_EncryptionTableAdapter = new OBD_2.GeneralDataSets.MarkEncryptionDataSetTableAdapters.Mark_EncryptionTableAdapter();
-            this.disciplineTableAdapter = new OBD_2.GeneralDataSets.DisciplineDataSetTableAdapters.DisciplineTableAdapter();
-            this.markListDataSet = new OBD_2.ListDataSets.MarkListDataSet();
+            this.classProcedureTableAdapter = new SchoolJornal.GeneralDataSets.ClassDataSetTableAdapters.ClassProcedureTableAdapter();
+            this.mark_EncryptionTableAdapter = new SchoolJornal.GeneralDataSets.MarkEncryptionDataSetTableAdapters.Mark_EncryptionTableAdapter();
+            this.disciplineTableAdapter = new SchoolJornal.GeneralDataSets.DisciplineDataSetTableAdapters.DisciplineTableAdapter();
+            this.markListDataSet = new SchoolJornal.ListDataSets.MarkListDataSet();
             this.markInfoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.mark_InfoTableAdapter = new OBD_2.ListDataSets.MarkListDataSetTableAdapters.Mark_InfoTableAdapter();
+            this.mark_InfoTableAdapter = new SchoolJornal.ListDataSets.MarkListDataSetTableAdapters.Mark_InfoTableAdapter();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.disciplineBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.disciplineDataSet)).BeginInit();

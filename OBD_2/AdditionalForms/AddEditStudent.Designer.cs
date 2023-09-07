@@ -1,5 +1,5 @@
 ﻿
-namespace OBD_2
+namespace SchoolJornal
 {
     partial class AddEditStudent
     {
@@ -33,7 +33,7 @@ namespace OBD_2
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.educationClassBox = new System.Windows.Forms.ComboBox();
             this.classProcedureBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.classDataSet = new OBD_2.GeneralDataSets.ClassDataSet();
+            this.classDataSet = new SchoolJornal.GeneralDataSets.ClassDataSet();
             this.label1 = new System.Windows.Forms.Label();
             this.educationFormBox = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -48,7 +48,7 @@ namespace OBD_2
             this.mainLabel = new System.Windows.Forms.Label();
             this.PersonalInfo = new System.Windows.Forms.ToolTip(this.components);
             this.EducationInfo = new System.Windows.Forms.ToolTip(this.components);
-            this.classProcedureTableAdapter = new OBD_2.GeneralDataSets.ClassDataSetTableAdapters.ClassProcedureTableAdapter();
+            this.classProcedureTableAdapter = new SchoolJornal.GeneralDataSets.ClassDataSetTableAdapters.ClassProcedureTableAdapter();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.classProcedureBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.classDataSet)).BeginInit();

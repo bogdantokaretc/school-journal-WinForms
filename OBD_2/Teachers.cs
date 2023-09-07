@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.IO;
 
-namespace OBD_2
+namespace SchoolJornal
 {
     public partial class Teachers : Form
     {

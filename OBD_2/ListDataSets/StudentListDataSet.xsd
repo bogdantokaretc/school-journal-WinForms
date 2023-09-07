@@ -4,7 +4,7 @@
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SchoolRegisterConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SchoolRegisterConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.OBD_2.Properties.Settings.GlobalReference.Default.SchoolRegisterConnectionString1" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SchoolRegisterConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SchoolRegisterConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SchoolJornal.Properties.Settings.GlobalReference.Default.SchoolRegisterConnectionString1" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Student_InfoTableAdapter" GeneratorDataComponentClassName="Student_InfoTableAdapter" Name="Student_Info" UserDataComponentName="Student_InfoTableAdapter">
@@ -26,7 +26,7 @@
               <Mapping SourceColumn="Форма навчання" DataSetColumn="Форма навчання" />
             </Mappings>
             <Sources>
-              <DbSource ConnectionRef="SchoolRegisterConnectionString1 (Settings)" DbObjectName="SchoolRegister.dbo.ClassProcedure" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorGetMethodName="GetDataClass" GeneratorSourceName="FillClass" Modifier="Public" Name="FillClass" QueryType="Scalar" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataClass" UserSourceName="FillClass">
+              <DbSource ConnectionRef="SchoolRegisterConnectionString1 (Settings)" DbObjectName="SchoolRegister.dbo.ClassProcedure" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorGetMethodName="GetDataClass" GeneratorSourceName="FillClass" Modifier="Public" Name="FillClass" QueryType="Scalar" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillClass">
                 <SelectCommand>
                   <DbCommand CommandType="StoredProcedure" ModifiedByUser="true">
                     <CommandText>dbo.ClassProcedure</CommandText>
@@ -43,41 +43,41 @@
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="StudentListDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="StudentListDataSet" msprop:Generator_UserDSName="StudentListDataSet">
+  <xs:element name="StudentListDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="StudentListDataSet" msprop:Generator_DataSetName="StudentListDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Student_Info" msprop:Generator_TableClassName="Student_InfoDataTable" msprop:Generator_TableVarName="tableStudent_Info" msprop:Generator_RowChangedName="Student_InfoRowChanged" msprop:Generator_TablePropName="Student_Info" msprop:Generator_RowDeletingName="Student_InfoRowDeleting" msprop:Generator_RowChangingName="Student_InfoRowChanging" msprop:Generator_RowEvHandlerName="Student_InfoRowChangeEventHandler" msprop:Generator_RowDeletedName="Student_InfoRowDeleted" msprop:Generator_RowClassName="Student_InfoRow" msprop:Generator_UserTableName="Student_Info" msprop:Generator_RowEvArgName="Student_InfoRowChangeEvent">
+        <xs:element name="Student_Info" msprop:Generator_RowEvHandlerName="Student_InfoRowChangeEventHandler" msprop:Generator_RowDeletedName="Student_InfoRowDeleted" msprop:Generator_RowDeletingName="Student_InfoRowDeleting" msprop:Generator_RowEvArgName="Student_InfoRowChangeEvent" msprop:Generator_TablePropName="Student_Info" msprop:Generator_RowChangedName="Student_InfoRowChanged" msprop:Generator_RowChangingName="Student_InfoRowChanging" msprop:Generator_TableClassName="Student_InfoDataTable" msprop:Generator_RowClassName="Student_InfoRow" msprop:Generator_TableVarName="tableStudent_Info" msprop:Generator_UserTableName="Student_Info">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Прізвище" msprop:Generator_ColumnVarNameInTable="columnПрізвище" msprop:Generator_ColumnPropNameInRow="Прізвище" msprop:Generator_ColumnPropNameInTable="ПрізвищеColumn" msprop:Generator_UserColumnName="Прізвище">
+              <xs:element name="Прізвище" msprop:Generator_ColumnPropNameInRow="Прізвище" msprop:Generator_ColumnPropNameInTable="ПрізвищеColumn" msprop:Generator_ColumnVarNameInTable="columnПрізвище" msprop:Generator_UserColumnName="Прізвище">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Ім_x0027_я" msprop:Generator_ColumnVarNameInTable="_columnІм_я" msprop:Generator_ColumnPropNameInRow="_Ім_я" msprop:Generator_ColumnPropNameInTable="_Ім_яColumn" msprop:Generator_UserColumnName="Ім'я">
+              <xs:element name="Ім_x0027_я" msprop:Generator_ColumnPropNameInRow="_Ім_я" msprop:Generator_ColumnPropNameInTable="_Ім_яColumn" msprop:Generator_ColumnVarNameInTable="_columnІм_я" msprop:Generator_UserColumnName="Ім'я">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="20" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="По_x0020_батькові" msprop:Generator_ColumnVarNameInTable="columnПо_батькові" msprop:Generator_ColumnPropNameInRow="По_батькові" msprop:Generator_ColumnPropNameInTable="По_батьковіColumn" msprop:Generator_UserColumnName="По батькові">
+              <xs:element name="По_x0020_батькові" msprop:Generator_ColumnPropNameInRow="По_батькові" msprop:Generator_ColumnPropNameInTable="По_батьковіColumn" msprop:Generator_ColumnVarNameInTable="columnПо_батькові" msprop:Generator_UserColumnName="По батькові">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="20" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Клас" msprop:Generator_ColumnVarNameInTable="columnКлас" msprop:Generator_ColumnPropNameInRow="Клас" msprop:Generator_ColumnPropNameInTable="КласColumn" msprop:Generator_UserColumnName="Клас">
+              <xs:element name="Клас" msprop:Generator_ColumnPropNameInRow="Клас" msprop:Generator_ColumnPropNameInTable="КласColumn" msprop:Generator_ColumnVarNameInTable="columnКлас" msprop:Generator_UserColumnName="Клас">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="5" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Форма_x0020_навчання" msprop:Generator_ColumnVarNameInTable="columnФорма_навчання" msprop:Generator_ColumnPropNameInRow="Форма_навчання" msprop:Generator_ColumnPropNameInTable="Форма_навчанняColumn" msprop:Generator_UserColumnName="Форма навчання">
+              <xs:element name="Форма_x0020_навчання" msprop:Generator_ColumnPropNameInRow="Форма_навчання" msprop:Generator_ColumnPropNameInTable="Форма_навчанняColumn" msprop:Generator_ColumnVarNameInTable="columnФорма_навчання" msprop:Generator_UserColumnName="Форма навчання">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="20" />

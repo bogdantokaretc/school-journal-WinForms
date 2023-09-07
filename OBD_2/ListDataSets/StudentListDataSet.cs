@@ -1,4 +1,4 @@
-﻿namespace OBD_2.ListDataSets
+﻿namespace SchoolJornal.ListDataSets
 {
 
 
@@ -8,7 +8,7 @@
 }
 
 
-namespace OBD_2.ListDataSets.StudentListDataSetTableAdapters
+namespace SchoolJornal.ListDataSets.StudentListDataSetTableAdapters
 {
 
 

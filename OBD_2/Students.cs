@@ -11,7 +11,7 @@ using System.Xml.Serialization;
 using System.IO;
 using System.Data.SqlClient;
 
-namespace OBD_2
+namespace SchoolJornal
 {
     public partial class Students : Form
     {

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
-namespace OBD_2
+namespace SchoolJornal
 {
     public partial class AddEditStudent : Form
     {

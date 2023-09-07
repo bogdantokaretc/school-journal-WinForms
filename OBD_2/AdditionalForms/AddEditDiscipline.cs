@@ -11,7 +11,7 @@ using System.Data.SqlClient;
 
 
 
-namespace OBD_2
+namespace SchoolJornal
 {
     public partial class AddEditDiscipline : Form
     {

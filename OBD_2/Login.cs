@@ -12,7 +12,7 @@ using System.Data.SqlClient;
 using System.IO;
 using System.Xml.Serialization;
 
-namespace OBD_2
+namespace SchoolJornal
 {
   
     public partial class Login : Form

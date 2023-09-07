@@ -98,6 +98,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DisciplineDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="GeneralDataSets\teacherDataSet.cs">
+      <DependentUpon>teacherDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ListDataSets\DisciplineListDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

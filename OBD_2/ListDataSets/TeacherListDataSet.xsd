@@ -4,7 +4,7 @@
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SchoolRegisterConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SchoolRegisterConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.OBD_2.Properties.Settings.GlobalReference.Default.SchoolRegisterConnectionString1" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SchoolRegisterConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SchoolRegisterConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SchoolJornal.Properties.Settings.GlobalReference.Default.SchoolRegisterConnectionString1" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Teacher_InfoTableAdapter" GeneratorDataComponentClassName="Teacher_InfoTableAdapter" Name="Teacher_Info" UserDataComponentName="Teacher_InfoTableAdapter">
@@ -32,41 +32,41 @@
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="TeacherListDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="TeacherListDataSet" msprop:Generator_UserDSName="TeacherListDataSet">
+  <xs:element name="TeacherListDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="TeacherListDataSet" msprop:Generator_DataSetName="TeacherListDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Teacher_Info" msprop:Generator_TableClassName="Teacher_InfoDataTable" msprop:Generator_TableVarName="tableTeacher_Info" msprop:Generator_TablePropName="Teacher_Info" msprop:Generator_RowDeletingName="Teacher_InfoRowDeleting" msprop:Generator_RowChangingName="Teacher_InfoRowChanging" msprop:Generator_RowEvHandlerName="Teacher_InfoRowChangeEventHandler" msprop:Generator_RowDeletedName="Teacher_InfoRowDeleted" msprop:Generator_UserTableName="Teacher_Info" msprop:Generator_RowChangedName="Teacher_InfoRowChanged" msprop:Generator_RowEvArgName="Teacher_InfoRowChangeEvent" msprop:Generator_RowClassName="Teacher_InfoRow">
+        <xs:element name="Teacher_Info" msprop:Generator_RowClassName="Teacher_InfoRow" msprop:Generator_RowEvHandlerName="Teacher_InfoRowChangeEventHandler" msprop:Generator_RowDeletedName="Teacher_InfoRowDeleted" msprop:Generator_RowDeletingName="Teacher_InfoRowDeleting" msprop:Generator_RowEvArgName="Teacher_InfoRowChangeEvent" msprop:Generator_TablePropName="Teacher_Info" msprop:Generator_RowChangedName="Teacher_InfoRowChanged" msprop:Generator_RowChangingName="Teacher_InfoRowChanging" msprop:Generator_TableClassName="Teacher_InfoDataTable" msprop:Generator_UserTableName="Teacher_Info" msprop:Generator_TableVarName="tableTeacher_Info">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Прізвище" msprop:Generator_ColumnVarNameInTable="columnПрізвище" msprop:Generator_ColumnPropNameInRow="Прізвище" msprop:Generator_ColumnPropNameInTable="ПрізвищеColumn" msprop:Generator_UserColumnName="Прізвище">
+              <xs:element name="Прізвище" msprop:Generator_ColumnPropNameInRow="Прізвище" msprop:Generator_ColumnPropNameInTable="ПрізвищеColumn" msprop:Generator_ColumnVarNameInTable="columnПрізвище" msprop:Generator_UserColumnName="Прізвище">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Ім_x0027_я" msprop:Generator_ColumnVarNameInTable="_columnІм_я" msprop:Generator_ColumnPropNameInRow="_Ім_я" msprop:Generator_ColumnPropNameInTable="_Ім_яColumn" msprop:Generator_UserColumnName="Ім'я">
+              <xs:element name="Ім_x0027_я" msprop:Generator_ColumnPropNameInRow="_Ім_я" msprop:Generator_ColumnPropNameInTable="_Ім_яColumn" msprop:Generator_ColumnVarNameInTable="_columnІм_я" msprop:Generator_UserColumnName="Ім'я">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="20" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="По_x0020_батькові" msprop:Generator_ColumnVarNameInTable="columnПо_батькові" msprop:Generator_ColumnPropNameInRow="По_батькові" msprop:Generator_ColumnPropNameInTable="По_батьковіColumn" msprop:Generator_UserColumnName="По батькові">
+              <xs:element name="По_x0020_батькові" msprop:Generator_ColumnPropNameInRow="По_батькові" msprop:Generator_ColumnPropNameInTable="По_батьковіColumn" msprop:Generator_ColumnVarNameInTable="columnПо_батькові" msprop:Generator_UserColumnName="По батькові">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="20" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Тип_x0020_телефону" msprop:Generator_ColumnVarNameInTable="columnТип_телефону" msprop:Generator_ColumnPropNameInRow="Тип_телефону" msprop:Generator_ColumnPropNameInTable="Тип_телефонуColumn" msprop:Generator_UserColumnName="Тип телефону">
+              <xs:element name="Тип_x0020_телефону" msprop:Generator_ColumnPropNameInRow="Тип_телефону" msprop:Generator_ColumnPropNameInTable="Тип_телефонуColumn" msprop:Generator_ColumnVarNameInTable="columnТип_телефону" msprop:Generator_UserColumnName="Тип телефону">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="20" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Номер_x0020_телефону" msprop:Generator_ColumnVarNameInTable="columnНомер_телефону" msprop:Generator_ColumnPropNameInRow="Номер_телефону" msprop:Generator_ColumnPropNameInTable="Номер_телефонуColumn" msprop:Generator_UserColumnName="Номер телефону">
+              <xs:element name="Номер_x0020_телефону" msprop:Generator_ColumnPropNameInRow="Номер_телефону" msprop:Generator_ColumnPropNameInTable="Номер_телефонуColumn" msprop:Generator_ColumnVarNameInTable="columnНомер_телефону" msprop:Generator_UserColumnName="Номер телефону">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="20" />

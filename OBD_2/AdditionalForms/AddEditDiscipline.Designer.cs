@@ -1,7 +1,7 @@
 ﻿
 
 
-namespace OBD_2
+namespace SchoolJornal
 {
     partial class AddEditDiscipline
     {
@@ -37,18 +37,18 @@ namespace OBD_2
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.teacherBox = new System.Windows.Forms.ComboBox();
             this.teacherProcedureBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            //this.teacherDataSet = new OBD_2.GeneralDataSets.teacherDataSet();
+            //this.teacherDataSet = new SchoolJornal.GeneralDataSets.teacherDataSet();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.nameBox = new System.Windows.Forms.ComboBox();
             this.disciplineBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.disciplineDataSet = new OBD_2.GeneralDataSets.DisciplineDataSet();
+            this.disciplineDataSet = new SchoolJornal.GeneralDataSets.DisciplineDataSet();
             this.label3 = new System.Windows.Forms.Label();
             this.addEditButton = new System.Windows.Forms.Button();
             this.DisciplineTip = new System.Windows.Forms.ToolTip(this.components);
             this.TeacherTip = new System.Windows.Forms.ToolTip(this.components);
-            this.teacherProcedureTableAdapter = new OBD_2.GeneralDataSets.teacherDataSetTableAdapters.TeacherProcedureTableAdapter();
-            this.disciplineTableAdapter = new OBD_2.GeneralDataSets.DisciplineDataSetTableAdapters.DisciplineTableAdapter();
+            this.teacherProcedureTableAdapter = new SchoolJornal.GeneralDataSets.teacherDataSetTableAdapters.TeacherProcedureTableAdapter();
+            this.disciplineTableAdapter = new SchoolJornal.GeneralDataSets.DisciplineDataSetTableAdapters.DisciplineTableAdapter();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.teacherProcedureBindingSource)).BeginInit();

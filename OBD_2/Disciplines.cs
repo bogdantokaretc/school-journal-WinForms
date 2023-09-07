@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-namespace OBD_2
+namespace SchoolJornal
 {
     public partial class Disciplines : Form
     {
@@ -53,13 +53,14 @@ namespace OBD_2
                 var AmountTime = Convert.ToString(disciplineGridView.Rows[index].Cells[4].Value);
                 EditDiscipline.disciplineTableAdapter.Fill(EditDiscipline.disciplineDataSet.Discipline);
                 EditDiscipline.teacherProcedureTableAdapter.Fill(EditDiscipline.teacherDataSet.TeacherProcedure);
+
                 EditDiscipline.teacherBox.SelectedValue = Surname + " " + Name + " " + Patronymic;
                 string query = $"SELECT ID_Discipline FROM Discipline WHERE Discipline_Name = '{Discipline}'";
                 SqlCommand command = new SqlCommand(query, connection);
                 EditDiscipline.nameBox.SelectedValue = command.ExecuteScalar().ToString();
                 connection.Close();
             }
-            catch
+            catch (Exception)
             {
                 MessageBox.Show("Помилка оновлення даних!", "Помилка",
                MessageBoxButtons.OK, MessageBoxIcon.Error);

@@ -1,5 +1,5 @@
 ﻿
-namespace OBD_2
+namespace SchoolJornal
 {
     partial class Students
     {
@@ -40,7 +40,7 @@ namespace OBD_2
             this.класDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.формаНавчанняDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.studentInfoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.studentListDataSet = new OBD_2.ListDataSets.StudentListDataSet();
+            this.studentListDataSet = new SchoolJornal.ListDataSets.StudentListDataSet();
             this.deleteStudentButton = new System.Windows.Forms.Button();
             this.editStudentButton = new System.Windows.Forms.Button();
             this.addStudentButton = new System.Windows.Forms.Button();
@@ -50,20 +50,20 @@ namespace OBD_2
             this.label5 = new System.Windows.Forms.Label();
             this.educationFormBox = new System.Windows.Forms.ComboBox();
             this.educationFormProcedureBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.educationFormDataSet = new OBD_2.GeneralDataSets.EducationFormDataSet();
+            this.educationFormDataSet = new SchoolJornal.GeneralDataSets.EducationFormDataSet();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.classCheck = new System.Windows.Forms.CheckBox();
             this.educationFormCheck = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
             this.classBox = new System.Windows.Forms.ComboBox();
             this.classProcedureBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.classDataSet = new OBD_2.GeneralDataSets.ClassDataSet();
+            this.classDataSet = new SchoolJornal.GeneralDataSets.ClassDataSet();
             this.homeButton = new System.Windows.Forms.Button();
             this.StudentTip = new System.Windows.Forms.ToolTip(this.components);
             this.StudentButtonsTip = new System.Windows.Forms.ToolTip(this.components);
-            this.student_InfoTableAdapter = new OBD_2.ListDataSets.StudentListDataSetTableAdapters.Student_InfoTableAdapter();
-            this.classProcedureTableAdapter = new OBD_2.GeneralDataSets.ClassDataSetTableAdapters.ClassProcedureTableAdapter();
-            this.educationFormProcedureTableAdapter = new OBD_2.GeneralDataSets.EducationFormDataSetTableAdapters.EducationFormProcedureTableAdapter();
+            this.student_InfoTableAdapter = new SchoolJornal.ListDataSets.StudentListDataSetTableAdapters.Student_InfoTableAdapter();
+            this.classProcedureTableAdapter = new SchoolJornal.GeneralDataSets.ClassDataSetTableAdapters.ClassProcedureTableAdapter();
+            this.educationFormProcedureTableAdapter = new SchoolJornal.GeneralDataSets.EducationFormDataSetTableAdapters.EducationFormProcedureTableAdapter();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.studentGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentInfoBindingSource)).BeginInit();

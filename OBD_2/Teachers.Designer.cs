@@ -1,5 +1,5 @@
 ﻿
-namespace OBD_2
+namespace SchoolJornal
 {
     partial class Teachers
     {
@@ -46,10 +46,10 @@ namespace OBD_2
             this.типТелефонуDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.номерТелефонуDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.teacherInfoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.teacherListDataSet = new OBD_2.ListDataSets.TeacherListDataSet();
+            this.teacherListDataSet = new SchoolJornal.ListDataSets.TeacherListDataSet();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.teacher_InfoTableAdapter = new OBD_2.ListDataSets.TeacherListDataSetTableAdapters.Teacher_InfoTableAdapter();
+            this.teacher_InfoTableAdapter = new SchoolJornal.ListDataSets.TeacherListDataSetTableAdapters.Teacher_InfoTableAdapter();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.teacherInfoBindingSource)).BeginInit();

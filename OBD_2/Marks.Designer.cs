@@ -1,5 +1,5 @@
 ﻿
-namespace OBD_2
+namespace SchoolJornal
 {
     partial class Marks
     {
@@ -39,6 +39,8 @@ namespace OBD_2
             this.label5 = new System.Windows.Forms.Label();
             this.markFindBox = new System.Windows.Forms.TextBox();
             this.disciplineBox = new System.Windows.Forms.ComboBox();
+            this.disciplineProcedureBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.disciplineProcedureDataSet = new SchoolJornal.disciplineProcedureDataSet();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -51,23 +53,24 @@ namespace OBD_2
             this.оцінкаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.датаОтриманняDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.markInfoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.markListDataSet = new OBD_2.ListDataSets.MarkListDataSet();
+            this.markListDataSet = new SchoolJornal.ListDataSets.MarkListDataSet();
             this.deleteStudentButton = new System.Windows.Forms.Button();
             this.editStudentButton = new System.Windows.Forms.Button();
             this.addStudentButton = new System.Windows.Forms.Button();
             this.searchMarkButton = new System.Windows.Forms.Button();
             this.MarkTip = new System.Windows.Forms.ToolTip(this.components);
-            this.mark_InfoTableAdapter = new OBD_2.ListDataSets.MarkListDataSetTableAdapters.Mark_InfoTableAdapter();
-            this.disciplineProcedureDataSet = new OBD_2.disciplineProcedureDataSet();
-            this.disciplineProcedureBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.disciplineProcedureTableAdapter = new OBD_2.disciplineProcedureDataSetTableAdapters.DisciplineProcedureTableAdapter();
+            this.mark_InfoTableAdapter = new SchoolJornal.ListDataSets.MarkListDataSetTableAdapters.Mark_InfoTableAdapter();
+            this.disciplineProcedureTableAdapter = new SchoolJornal.disciplineProcedureDataSetTableAdapters.DisciplineProcedureTableAdapter();
+            this.disciplineProcedureDataSet1 = new SchoolJornal.disciplineProcedureDataSet();
+            this.disciplineProcedureTableAdapter1 = new SchoolJornal.disciplineProcedureDataSetTableAdapters.DisciplineProcedureTableAdapter();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.disciplineProcedureBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.disciplineProcedureDataSet)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.markGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.markInfoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.markListDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.disciplineProcedureDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.disciplineProcedureBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.disciplineProcedureDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // homeButton
@@ -192,6 +195,16 @@ namespace OBD_2
             this.disciplineBox.Size = new System.Drawing.Size(340, 35);
             this.disciplineBox.TabIndex = 16;
             this.disciplineBox.ValueMember = "Назва дисципліни";
+            // 
+            // disciplineProcedureBindingSource
+            // 
+            this.disciplineProcedureBindingSource.DataMember = "DisciplineProcedure";
+            this.disciplineProcedureBindingSource.DataSource = this.disciplineProcedureDataSet;
+            // 
+            // disciplineProcedureDataSet
+            // 
+            this.disciplineProcedureDataSet.DataSetName = "disciplineProcedureDataSet";
+            this.disciplineProcedureDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label4
             // 
@@ -378,19 +391,18 @@ namespace OBD_2
             // 
             this.mark_InfoTableAdapter.ClearBeforeFill = true;
             // 
-            // disciplineProcedureDataSet
-            // 
-            this.disciplineProcedureDataSet.DataSetName = "disciplineProcedureDataSet";
-            this.disciplineProcedureDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // disciplineProcedureBindingSource
-            // 
-            this.disciplineProcedureBindingSource.DataMember = "DisciplineProcedure";
-            this.disciplineProcedureBindingSource.DataSource = this.disciplineProcedureDataSet;
-            // 
             // disciplineProcedureTableAdapter
             // 
             this.disciplineProcedureTableAdapter.ClearBeforeFill = true;
+            // 
+            // disciplineProcedureDataSet1
+            // 
+            this.disciplineProcedureDataSet1.DataSetName = "disciplineProcedureDataSet";
+            this.disciplineProcedureDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // disciplineProcedureTableAdapter1
+            // 
+            this.disciplineProcedureTableAdapter1.ClearBeforeFill = true;
             // 
             // Marks
             // 
@@ -412,12 +424,13 @@ namespace OBD_2
             this.Load += new System.EventHandler(this.Marks_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.disciplineProcedureBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.disciplineProcedureDataSet)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.markGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.markInfoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.markListDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.disciplineProcedureDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.disciplineProcedureBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.disciplineProcedureDataSet1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -454,5 +467,7 @@ namespace OBD_2
         private disciplineProcedureDataSet disciplineProcedureDataSet;
         private System.Windows.Forms.BindingSource disciplineProcedureBindingSource;
         private disciplineProcedureDataSetTableAdapters.DisciplineProcedureTableAdapter disciplineProcedureTableAdapter;
+        private disciplineProcedureDataSet disciplineProcedureDataSet1;
+        private disciplineProcedureDataSetTableAdapters.DisciplineProcedureTableAdapter disciplineProcedureTableAdapter1;
     }
 }

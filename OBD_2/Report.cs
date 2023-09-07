@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using Microsoft.Reporting.WinForms;
 
-namespace OBD_2
+namespace SchoolJornal
 {
     public partial class ReportForm : Form
     {
@@ -49,7 +49,7 @@ namespace OBD_2
                 dataAdapter.Fill(dataTable);
                 reportViewer1.LocalReport.DataSources.Clear();
                 ReportDataSource source = new ReportDataSource("FirstDataSet", dataTable);
-                reportViewer1.LocalReport.ReportEmbeddedResource = "OBD_2.firstReport.rdlc";
+                reportViewer1.LocalReport.ReportEmbeddedResource = "SchoolJornal.firstReport.rdlc";
                 reportViewer1.LocalReport.DataSources.Add(source);
 
                 ReportParameter reportParameter = new ReportParameter("ClassParametr", ClassBox.Text.TrimEnd());
@@ -71,7 +71,7 @@ namespace OBD_2
         private void secondReportButton_Click(object sender, EventArgs e)
         {
             connection.Open();
-            reportViewer2.LocalReport.ReportEmbeddedResource = "OBD_2.secondReport.rdlc";
+            reportViewer2.LocalReport.ReportEmbeddedResource = "SchoolJornal.secondReport.rdlc";
             SqlCommand command = new SqlCommand($"SELECT COUNT(*) FROM Student", connection);
             ReportParameter reportParameter = new ReportParameter("StudentSum", command.ExecuteScalar().ToString());
             reportViewer2.LocalReport.SetParameters(reportParameter);
@@ -84,7 +84,7 @@ namespace OBD_2
             reportParameter = new ReportParameter("DisciplineSum", command.ExecuteScalar().ToString());
             reportViewer2.LocalReport.SetParameters(reportParameter);
 
-            command = new SqlCommand($"SELECT * FROM Class", connection);
+            command = new SqlCommand($"SELECT COUNT(*) FROM Class", connection);
             reportParameter = new ReportParameter("ClassSum", command.ExecuteScalar().ToString());
             reportViewer2.LocalReport.SetParameters(reportParameter);
 

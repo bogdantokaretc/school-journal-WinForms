@@ -1,5 +1,5 @@
 ﻿
-namespace OBD_2
+namespace SchoolJornal
 {
     partial class ReportForm
     {
@@ -31,7 +31,7 @@ namespace OBD_2
         {
             this.components = new System.ComponentModel.Container();
             this.StudentBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.reportOneDataSet = new OBD_2.reportOneDataSet();
+            this.reportOneDataSet = new SchoolJornal.reportOneDataSet();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.firstReport = new System.Windows.Forms.TabPage();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
@@ -39,12 +39,12 @@ namespace OBD_2
             this.label1 = new System.Windows.Forms.Label();
             this.ClassBox = new System.Windows.Forms.ComboBox();
             this.classProcedureBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.classDataSet = new OBD_2.GeneralDataSets.ClassDataSet();
+            this.classDataSet = new SchoolJornal.GeneralDataSets.ClassDataSet();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.secondReportButton = new System.Windows.Forms.Button();
             this.reportViewer2 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.classProcedureTableAdapter = new OBD_2.GeneralDataSets.ClassDataSetTableAdapters.ClassProcedureTableAdapter();
-            this.StudentTableAdapter = new OBD_2.reportOneDataSetTableAdapters.StudentTableAdapter();
+            this.classProcedureTableAdapter = new SchoolJornal.GeneralDataSets.ClassDataSetTableAdapters.ClassProcedureTableAdapter();
+            this.StudentTableAdapter = new SchoolJornal.reportOneDataSetTableAdapters.StudentTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.StudentBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reportOneDataSet)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -91,7 +91,7 @@ namespace OBD_2
             // 
             // reportViewer1
             // 
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "OBD_2.firstReport.rdlc";
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "SchoolJornal.firstReport.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
@@ -176,7 +176,7 @@ namespace OBD_2
             // 
             // reportViewer2
             // 
-            this.reportViewer2.LocalReport.ReportEmbeddedResource = "OBD_2.secondReport.rdlc";
+            this.reportViewer2.LocalReport.ReportEmbeddedResource = "SchoolJornal.secondReport.rdlc";
             this.reportViewer2.Location = new System.Drawing.Point(0, 0);
             this.reportViewer2.Name = "reportViewer2";
             this.reportViewer2.ServerReport.BearerToken = null;

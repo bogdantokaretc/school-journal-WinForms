@@ -11,7 +11,7 @@ using System.Windows.Forms;
 using System.Xml.Serialization;
 using System.IO;
 
-namespace OBD_2
+namespace SchoolJornal
 {
     public partial class MainForm : Form
     {

@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace OBD_2.ListDataSets {
+namespace SchoolJornal.ListDataSets {
     
     
     /// <summary>
@@ -727,7 +727,7 @@ namespace OBD_2.ListDataSets {
         }
     }
 }
-namespace OBD_2.ListDataSets.MarkListDataSetTableAdapters {
+namespace SchoolJornal.ListDataSets.MarkListDataSetTableAdapters {
     
     
     /// <summary>
@@ -864,7 +864,7 @@ namespace OBD_2.ListDataSets.MarkListDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::OBD_2.Properties.Settings.Default.SchoolRegisterConnectionString1;
+            this._connection.ConnectionString = global::SchoolJornal.Properties.Settings.Default.SchoolRegisterConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

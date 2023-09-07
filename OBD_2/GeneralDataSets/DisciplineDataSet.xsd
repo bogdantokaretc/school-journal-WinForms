@@ -4,7 +4,7 @@
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SchoolRegisterConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SchoolRegisterConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.OBD_2.Properties.Settings.GlobalReference.Default.SchoolRegisterConnectionString1" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SchoolRegisterConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SchoolRegisterConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SchoolJornal.Properties.Settings.GlobalReference.Default.SchoolRegisterConnectionString1" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DisciplineTableAdapter" GeneratorDataComponentClassName="DisciplineTableAdapter" Name="Discipline" UserDataComponentName="DisciplineTableAdapter">
@@ -50,20 +50,20 @@ SELECT ID_Discipline, Discipline_Name FROM Discipline WHERE (ID_Discipline = @ID
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="DisciplineDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DisciplineDataSet" msprop:Generator_UserDSName="DisciplineDataSet">
+  <xs:element name="DisciplineDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="DisciplineDataSet" msprop:Generator_DataSetName="DisciplineDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Discipline" msprop:Generator_TableClassName="DisciplineDataTable" msprop:Generator_TableVarName="tableDiscipline" msprop:Generator_TablePropName="Discipline" msprop:Generator_RowDeletingName="DisciplineRowDeleting" msprop:Generator_RowChangingName="DisciplineRowChanging" msprop:Generator_RowEvHandlerName="DisciplineRowChangeEventHandler" msprop:Generator_RowDeletedName="DisciplineRowDeleted" msprop:Generator_UserTableName="Discipline" msprop:Generator_RowChangedName="DisciplineRowChanged" msprop:Generator_RowEvArgName="DisciplineRowChangeEvent" msprop:Generator_RowClassName="DisciplineRow">
+        <xs:element name="Discipline" msprop:Generator_RowClassName="DisciplineRow" msprop:Generator_RowEvHandlerName="DisciplineRowChangeEventHandler" msprop:Generator_RowDeletedName="DisciplineRowDeleted" msprop:Generator_RowDeletingName="DisciplineRowDeleting" msprop:Generator_RowEvArgName="DisciplineRowChangeEvent" msprop:Generator_TablePropName="Discipline" msprop:Generator_RowChangedName="DisciplineRowChanged" msprop:Generator_RowChangingName="DisciplineRowChanging" msprop:Generator_TableClassName="DisciplineDataTable" msprop:Generator_UserTableName="Discipline" msprop:Generator_TableVarName="tableDiscipline">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="ID_Discipline" msprop:Generator_ColumnVarNameInTable="columnID_Discipline" msprop:Generator_ColumnPropNameInRow="ID_Discipline" msprop:Generator_ColumnPropNameInTable="ID_DisciplineColumn" msprop:Generator_UserColumnName="ID_Discipline">
+              <xs:element name="ID_Discipline" msprop:Generator_ColumnPropNameInRow="ID_Discipline" msprop:Generator_ColumnPropNameInTable="ID_DisciplineColumn" msprop:Generator_ColumnVarNameInTable="columnID_Discipline" msprop:Generator_UserColumnName="ID_Discipline">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="5" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Discipline_Name" msprop:Generator_ColumnVarNameInTable="columnDiscipline_Name" msprop:Generator_ColumnPropNameInRow="Discipline_Name" msprop:Generator_ColumnPropNameInTable="Discipline_NameColumn" msprop:Generator_UserColumnName="Discipline_Name">
+              <xs:element name="Discipline_Name" msprop:Generator_ColumnPropNameInRow="Discipline_Name" msprop:Generator_ColumnPropNameInTable="Discipline_NameColumn" msprop:Generator_ColumnVarNameInTable="columnDiscipline_Name" msprop:Generator_UserColumnName="Discipline_Name">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="20" />

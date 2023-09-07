@@ -1,4 +1,4 @@
-﻿namespace OBD_2.ListDataSets
+﻿namespace SchoolJornal.ListDataSets
 {
 
 
