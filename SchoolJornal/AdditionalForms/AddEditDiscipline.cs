@@ -27,7 +27,7 @@ namespace SchoolJornal
         //Constructor for debugging
         public AddEditDiscipline()
         {
-            connection = new SqlConnection(@"Data Source=DESKTOP-M3Q63QC\SQLEXPRESS;Initial Catalog=SchoolRegister;User studentID=sa;Password=123456789");
+            connection = new SqlConnection(@"Data Source=DESKTOP-M3Q63QC\SQLEXPRESS;Initial Catalog=SchoolRegister;User ID=sa;Password=123456789");
             InitializeComponent();
         }
         // Filling data from main DataGrid

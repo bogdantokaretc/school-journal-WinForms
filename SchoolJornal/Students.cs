@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Xml.Serialization;
 using System.IO;
 using System.Data.SqlClient;
+using static SchoolJornal.GeneralDataSets.DisciplineDataSet;
 
 namespace SchoolJornal
 {
@@ -27,7 +28,7 @@ namespace SchoolJornal
             connection = con;
             InitializeComponent();
         }
-        private void Default()
+        private void Default() //Default view settings 
         {
             studentFindBox.Clear();
             classCheck.CheckState = CheckState.Unchecked;
@@ -167,7 +168,7 @@ namespace SchoolJornal
                 classCheck.BackColor = System.Drawing.Color.Green;
                 classBox.Enabled = true;
                 classBox.DataSource = classDataSet.ClassProcedure;
-                classBox.DisplayMember = "Клас";
+                classBox.DisplayMember = "ID_Class";
                 this.classProcedureTableAdapter.Fill(this.classDataSet.ClassProcedure);
             }
             if (!classCheck.Checked)

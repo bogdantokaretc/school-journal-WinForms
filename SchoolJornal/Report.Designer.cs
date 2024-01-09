@@ -128,7 +128,7 @@ namespace SchoolJornal
             this.ClassBox.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.ClassBox.Cursor = System.Windows.Forms.Cursors.Default;
             this.ClassBox.DataSource = this.classProcedureBindingSource;
-            this.ClassBox.DisplayMember = "Клас";
+            this.ClassBox.DisplayMember = "ID_Class";
             this.ClassBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ClassBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ClassBox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -136,7 +136,7 @@ namespace SchoolJornal
             this.ClassBox.Name = "ClassBox";
             this.ClassBox.Size = new System.Drawing.Size(140, 27);
             this.ClassBox.TabIndex = 1;
-            this.ClassBox.ValueMember = "Клас";
+            this.ClassBox.ValueMember = "ID_Class";
             // 
             // classProcedureBindingSource
             // 

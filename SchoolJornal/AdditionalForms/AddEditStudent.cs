@@ -32,7 +32,8 @@ namespace SchoolJornal
             // TODO: This line of code loads data into the 'classDataSet.ClassProcedure' table. You can move, or remove it, as needed.
             this.classProcedureTableAdapter.Fill(this.classDataSet.ClassProcedure);
 
-            if (addEditButton.Text == "Змінити дані учня") GetIDStudent();
+            if (addEditButton.Text == "Змінити дані учня") 
+                GetIDStudent();
         }
         private void GetIDStudent()
         {

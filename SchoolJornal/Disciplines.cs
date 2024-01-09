@@ -21,7 +21,7 @@ namespace SchoolJornal
             connection = con;
             InitializeComponent();
         }
-        //Reloading Discipline form default state
+        //Reloading Discipline form into default state
         private void Default()
         {
            

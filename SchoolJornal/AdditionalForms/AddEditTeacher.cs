@@ -23,7 +23,7 @@ namespace SchoolJornal
         }
         public AddEditTeacher()
         {
-            connection = new SqlConnection(@"Data Source=DESKTOP-M3Q63QC\SQLEXPRESS;Initial Catalog=SchoolRegister;Integrated Security=True;User studentID=sa;Password=123456789");
+            connection = new SqlConnection(@"Data Source=DESKTOP-M3Q63QC\SQLEXPRESS;Initial Catalog=SchoolRegister;Integrated Security=True;User ID=sa;Password=123456789");
             InitializeComponent();
         }
         private void AddEditTeacher_Load(object sender, EventArgs e)
@@ -35,10 +35,6 @@ namespace SchoolJornal
                 SqlCommand command = new SqlCommand(query, connection);
                 ID = command.ExecuteScalar().ToString();
                 connection.Close();
-            }
-            if (addEditButton.Text == "Зберегти дані вчителя")
-            {
-                
             }
         }
         private void Update()

@@ -23,7 +23,7 @@ namespace SchoolJornal
         }
         public AddEditMark()
         {
-            connection = new SqlConnection(@"Data Source=DESKTOP-M3Q63QC\SQLEXPRESS;Initial Catalog=SchoolRegister;Integrated Security=True;User studentID=sa;Password=123456789");
+            connection = new SqlConnection(@"Data Source=DESKTOP-M3Q63QC\SQLEXPRESS;Initial Catalog=SchoolRegister;Integrated Security=True;User ID=sa;Password=123456789");
             InitializeComponent();
         }
 

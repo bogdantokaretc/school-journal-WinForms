@@ -127,7 +127,7 @@
   <data name="deleteStudentButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        sQAAALEBxi1JjQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAC+SURBVEhLzZRB
+        sAAAALABFGqraQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAC+SURBVEhLzZRB
         CsIwFERzCu1aPb5FFFyLFO+jqGudKRRCyJBJg8UHb5Ewk99AaPgHbvAjHGAzuYNjm1EHzRpwhVNxrhco
         +fmAReAtaC18bdarmq5ai93LBdNb5W7ZNCDdczISp+xkJE7ZyUicspOROGUnI3HKTkbilJ2MJBfk/yX+
         x6Rr0jTAwe69IYOrceWxhuy8xlWBM2R4DztuFGCmh+ycuFFiCx+QhRrvcAMtdvAInzB3WCwzB8gPW5oQ
@@ -140,7 +140,7 @@
   <data name="editStudentButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        qgAAAKoBBgpwTwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGcSURBVEhL3dU7
+        qQAAAKkBq7NRIgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGcSURBVEhL3dU7
         L0RBGMbxEVuIRrUuDSLZ7Vw2mk1QSsQ3oNiGhEbCN6DaRKNwbSQKRCEkepdEI6Fx/wQ0bpEIGo7/u+Zs
         5kzOjaPyJL/kmJnzvGsSSzmO8ydIDSZwgmk0ldbtg79B0jjHMYaxjUdk3APVGMKSj0G70ETc8g90GOvr
         kPdVJ55wihUfBbPQRGoh5btYwy2yeq8fN/IgJXP2y1GIlF9AyuUGKrEKKc1gE7NQb8j7lQQhnnJj3R0i
@@ -154,7 +154,7 @@
   <data name="addStudentButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        pgAAAKYB3X3/OAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHoSURBVEhLndQ9
+        pQAAAKUBcMTeVQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHoSURBVEhLndQ9
         a1RREIDhkRBIEbEJSEwlCMHGj7Rp7KJd/oBoIVqJdURMCrETLLQIapXWQqxEG1tRC/+AsRAVBTvF7/V9
         Za45G2eXGwceOGdmzrm7557dGAwGYxETOI/7eJMcm5uo1rTKZIeYxxM40afUza3NV2s7ZVLENDbh5AEO
         w28jx+as2TNd7aEyKWI9N7hT1WUte9aruupkxCS+4B12Vz2ylj32TpY9ZTJiAQ7uVvWWPdm7UNbLZMRy

@@ -27,7 +27,7 @@ namespace SchoolJornal
             connection = con;
             InitializeComponent();
         }
-        private void Default()
+        private void Default() //Default view settings
         {
             markFindBox.Clear();
             markCheck.CheckState = CheckState.Unchecked;
@@ -82,9 +82,9 @@ namespace SchoolJornal
                 EditMark.markBox.Tag = Date;
                 connection.Close();
             }
-            catch
+            catch(Exception ex)
             {
-                MessageBox.Show("Помилка оновлення даних!", "Помилка",
+                MessageBox.Show(ex.Message, "Помилка",
                MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }

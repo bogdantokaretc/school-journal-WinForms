@@ -344,7 +344,7 @@ namespace SchoolJornal
             // classBox
             // 
             this.classBox.DataSource = this.classProcedureBindingSource;
-            this.classBox.DisplayMember = "Клас";
+            this.classBox.DisplayMember = "ID_Class";
             this.classBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.classBox.Enabled = false;
             this.classBox.FlatStyle = System.Windows.Forms.FlatStyle.System;
@@ -355,7 +355,7 @@ namespace SchoolJornal
             this.classBox.Size = new System.Drawing.Size(170, 35);
             this.classBox.TabIndex = 23;
             this.StudentTip.SetToolTip(this.classBox, "Вибір класу навчання");
-            this.classBox.ValueMember = "Клас";
+            this.classBox.ValueMember = "ID_Class";
             // 
             // classProcedureBindingSource
             // 
